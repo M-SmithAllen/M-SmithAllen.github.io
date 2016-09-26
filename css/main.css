@@ -3,14 +3,18 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
     display: block;
 }
 
+
 /* navigation bar */
-.navbar-wrapper {
-	height: 50px;
+.navbar .container .navbar-brand {
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif !important;
+	color: white;
+}
+.navbar .container > li > a{
+	color: white;
 }
 .navbar-header {
 	float: left;
@@ -20,38 +24,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .navbar .navbar-brand {
 	position: absolute;
-	left: 10px;
+	left: 20px;
 	font-size: 1.4em;
-	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif !important;
+	
 }
 .navbar-header-right {
+	float: right!important;
+    margin-right: -15px;
 	vertical-align: top;
-    position: absolute;
     right: 0;
     top: 0;
     font-size: 1em;
-	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif !important;
 }
 
 /* Header area */
-.header {
-	background-image: url(Images/background_images/c9e42240.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
-    padding: 50px;
+.header-wrapper {
+	margin: 0px;
+	padding: 0px;
+	color: #096E9C;
+	font-family: 'Playfair Display', serif;
 }
+.hn h1 {
+	font-size: 3em;
+}
+.header-wrapper .hq p {
+	margin-top: 110px;
+	text-align: center;
+	font-size: 2.3em;
+}
+
 
 /* Main body */
 .body-container {
 	padding: 100px;
 }
+.body-container section {
+	text-align:justify;
+}
+p {
+	text-align:justify;
+}
+
+hr {
+	width: 1000px;
+}
+hr:before {
+    display: block;
+    content: "";
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 0 0 1px 0;
+}
 
 /*Footer Area*/
-footer {
-	background: #333333;
-	width: 100%;
+.footer {
+	margin-left: 450px;
+	width: 50%;
 	overflow: hidden;
 	opacity: 0.90;
 }
@@ -82,8 +110,14 @@ footer.second{
 
 
 
-
-
+/* Blog page CSS */
+.container-blog {
+	margin-left: 300px;
+	width: 450px;
+	height: 100px;
+	margin-top: 50px;
+	float: left;
+}
 
 
 
