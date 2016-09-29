@@ -69,43 +69,35 @@ hr {
 	width: 1000px;
 }
 hr:before {
-    display: block;
+    display: inline-block;
     content: "";
     border-style: solid;
     border-color: #8c8b8b;
     border-width: 0 0 1px 0;
 }
 
+/* Portfolio */
+
+
+/* Contact me at */
+#contact {
+	min-height: 350px;
+	padding-top: 60px;
+}
+.thumbnail {
+	border: none;
+	box-shadow: none;
+}
+#contact-img {
+	max-height: 300px;
+}
+
 /*Footer Area*/
-.footer {
+.footing {
 	margin-left: 450px;
 	width: 50%;
 	overflow: hidden;
-	opacity: 0.90;
-}
-footer section {
-	color: #fff;
-	width: 90%;
-	float: center;
-	margin: 5% 5%;
-}
-footer p a {
-	text-decoration: none;
-}
-ul.social-tabs li {
-	display: inline;
-}
-ul.social-tabs li img {
-	width: 50px;
-	height: 50px;
-}
-
-footer.second{
-	border-top:1px solid #4d4e50;
-	background-color:#9F9F9F;
-	max-height:50px;
-	text-align:center;
-	opacity:0.95;
+	text-align: center;
 }
 
 
