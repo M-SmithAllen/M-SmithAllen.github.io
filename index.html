@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf8">
-	<meta httpequiv="XUACompatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Mike Smith | Developer</title>
 	
@@ -21,25 +21,20 @@
 	<!-- Custom Stylesheet & Font -->
 	<link href="css/main.css" rel="stylesheet">
 	<link href="js/main.js" rel="javascript">
-	
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/f1a4de6791.css" media="all">
 	
-	<style type="text/css">
-		.navbar {
-			border-radius: 0;
-			background-color:rgb(196, 186, 186);
-			background-image: none;
-		}
-		.navbar-inverse .navbar-nav > li > a {
-			color: white;
-		}
+	<style>
 		.header-wrapper {
-			background-image: url("images/background_images/c9e42240.jpg");
+			margin: 0px;
+			color: #096E9C;
+			font-family: 'Playfair Display', serif;
+			background-image: url(images/background_images/c9e42240.jpg);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
 			min-height: 300px;
-			padding: 40px;
+			padding: 60px;
 		}
 	</style>
 
@@ -48,37 +43,37 @@
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
 		
-		<div class="container">
+		<div class="container-fluid">
 		
 			<div class="navbar-header" >
 				<a class="navbar-brand">Michael "Mike" Smith</a>
 				
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-			</div>
-			
-			<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-header-right">
-						<li><a href="#about">About Page</a></li>
+				</div>
+			<!-- What will be toggled -->
+			<div class="collapse navbar-collapse" id="menu-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about">About</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#contact">Contact</a></li>
 						<li><a href="blog.html" target="_blank">Blog</a></li>
 					</ul>
 			</div><!-- end of collapse navbar-collapse -->
 				
-		</div><!-- end of  container -->
+		</div><!-- end of  container-fluid -->
 			
 	</nav><!-- end of navbar navbar-inverse -->
 	
 	<div class="header-wrapper">
-		<div class="hn">
+		<div id="hn">
 			<h1>Mike Smith</h1>
 		</div>
-		<div class="hq">
+		<div id="hq">
 			<p>An aspiring Web Designer.</p>
 		</div>
 	</div><!-- end of header-wrapper -->
@@ -101,19 +96,18 @@
 			</div>
 		</section>
 		
-	</div><!-- end of container -->
-	
-	<hr></hr>
+		<hr></hr>
 	
 		<section id="portfolio">
 			<p></p>
 		</section>
 	
-	<hr></hr>
+		<hr></hr>
+		
 		<section id="contact" class="row">
-			<div class="col=sm-6 col-xs-12">
+			<div class="col-sm-6 col-xs-6">
                 <div class="thumbnail">
-                    <img id="contact-img" src="headshot.jpg" alt="Michael Smith headshot">
+                    <img id="contact-img" src="images/headshot.jpg" alt="Michael Smith headshot">
                 </div>
             </div>
 			
@@ -123,7 +117,8 @@
                 <i class="fa fa-envelope" aria-hidden="false"></i> Michael.Smith101979 @ gmail.com
                 <h3 id="socialmedia-header">Or, find me online</h3>
                 <div id="myToolTip"></div>
-                <ul class="list-unstyled">
+                
+				<ul class="list-unstyled">
                     <li>
                         <a class="hoverable" title="LinkedIn" href="https://www.linkedin.com/in/michaelsmith101979" target="_blank">
                             <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
@@ -135,7 +130,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="hoverable" title="Twitter" href="https://twitter.com/bobo6453" target="_blank">
+                        <a class="hoverable" title="Twitter" href="https://twitter.com/bwninja79" target="_blank">
                             <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
                         </a>
                     </li>
@@ -148,16 +143,8 @@
             </div>
         </section>
 	
+	</div><!-- end of container -->
 	
-	
-	
-	
-	
-	
-	
-	
-	
-		
 	<hr></hr>
 	
 	<footer class="footing">
@@ -165,8 +152,8 @@
 	</footer>
 	
 	<script src="js/jquery-2.1.4.min.js"></script>
+	<!--Does not work with dropdown this way and needs a workaround/research
+	<script src="js/jquery-3.1.0.min.js"></script>-->
 	<script src="js/bootstrap.min.js"></script>
-	
-   
 </body>
 </html>
