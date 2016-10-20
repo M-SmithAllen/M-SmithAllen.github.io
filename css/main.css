@@ -12,9 +12,9 @@ section {
     padding-top: 60px;
 }
 
-/* Everything withing nav */
-
-
+/************************
+Everything within nav 
+*************************/
 .navbar .container > li > a{
 	color: white;
 }
@@ -37,7 +37,9 @@ section {
     font-size: 1em;
 }
 
-/* Header area */
+/************************
+Header area 
+************************/
 #hn h1 {
 	font-size: 3em;
 }
@@ -48,7 +50,9 @@ section {
 }
 
 
-/* Main body */
+/************************
+Main body
+************************/
 .body-container {
 	padding: 100px;
 }
@@ -70,10 +74,15 @@ hr:before {
     border-width: 0 0 1px 0;
 }
 
-/* Portfolio */
+
+/************************
+Portfolio
+************************/
 
 
-/* Contact me at */
+/************************
+Contact me at
+************************/
 #contact {
 	min-height: 350px;
 	padding-top: 60px;
@@ -89,7 +98,10 @@ section ul li {
 	padding: 0 20px;
 }
 
-/*Footer Area*/
+
+/************************
+Footer Area
+************************/
 .footing {
 	width: 100%;
 	overflow: hidden;
@@ -97,8 +109,9 @@ section ul li {
 }
 
 
-
-/* Blog page CSS */
+/************************
+Blog page CSS 
+************************/
 .container-blog {
 	margin-left: 300px;
 	width: 450px;
@@ -106,20 +119,3 @@ section ul li {
 	margin-top: 50px;
 	float: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
