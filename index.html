@@ -20,17 +20,25 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/f1a4de6791.css" media="all">
 	
 	<style type="text/css">
-		.header-wrapper {
-			margin: 0px;
-			color: #096E9C;
-			font-family: 'Playfair Display', serif;
-			background-image: url(Images/background_images/c9e42240.jpg);
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			min-height: 300px;
-			padding: 60px;
-		}
+	.header-wrapper {
+		margin: 0px;
+		color: #096E9C;
+		font-family: 'Playfair Display', serif;
+		background-image: url(Images/background_images/c9e42240.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 300px;
+		padding: 60px;
+	}
+	.carousel {
+		width: 500px;
+	}
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 50%;
+		margin: auto;
+	}
 	</style>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -87,9 +95,35 @@
 		</section>
 		
 		<hr>
-	
-		<section id="portfolio">
-			<p style="font-size: 6em; text-align:center;">Past/Present Project Coming soon</p>
+		<section>
+			<div class="container">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<!-- Indicators -->
+				<ol class="carousel-indicators"></ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<a href="https://github.com/bobo6453/AppleFAQ" target="_blank">
+							<img src="Images/applefaq.png" alt="applefaq" style="width: 460px;" />
+						</a>
+					</div>
+					<div class="item">
+						<a href="https://github.com/bobo6453/AppleFAQ" target="_blank">
+							<img src="Images/applefaq1.png" alt="applefaq1" style="width: 460px;" />
+						</a>
+					</div>
+					<div class="item">
+						<a href="https://github.com/bobo6453/AppleFAQ" target="_blank">
+							<img src="Images/applefaq2.png" alt="applefaq3" style="width: 460px;" />
+						</a>
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> 
+				<span class="sr-only">Previous</span></a> 
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> 
+				<span class="sr-only">Next</span></a></div>
+			</div>
 		</section>
 	
 		<hr>
